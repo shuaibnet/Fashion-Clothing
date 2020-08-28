@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./form-input.style.scss";
-import SignIn from "../sign-in/sign-in.component";
 
 const FormInput = ({ handleChange, label, ...otherProps }) => (
   <div className='group'>
