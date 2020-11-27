@@ -3,9 +3,9 @@ import { withRouter } from 'react-router-dom';
 
 import './manu-item.style.scss';
 
-const ManuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
+const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
 
-    <div className={`${size} manu-item`}
+    <div className={`${size} menu-item`}
         onClick={() => history.push(`${match.url}${linkUrl}`)}>
         <div className='background-image' style={{
             backgroundImage: `url(${imageUrl})`
@@ -21,4 +21,4 @@ const ManuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
 
 );
 
-export default withRouter(ManuItem);
+export default withRouter(MenuItem);
